@@ -40,9 +40,15 @@ df3= pd.read_csv('data/DATACOFinal_2R3.csv')
 df_init=pd.concat([df1, df2,df3], 
                   axis = 1)
 
+df1= pd.read_csv('data/DataCoSupplyChainDatasetFPt1.csv', encoding='ISO-8859-1')
+df2= pd.read_csv('data/DataCoSupplyChainDatasetFPt2.csv', encoding='ISO-8859-1')
+df3= pd.read_csv('data/DataCoSupplyChainDatasetFPt3.csv', encoding='ISO-8859-1')
+df4= pd.read_csv('data/DataCoSupplyChainDatasetFPt4.csv', encoding='ISO-8859-1')
+df_fin=pd.concat([df1, df2,df3,df4], 
+                  axis = 1)
 
 #df_init= pd.read_csv('data/DATACOFinal_2.csv')
-df_fin = pd.read_csv('data/DATACOFinal_2.csv')
+#df_fin = pd.read_csv('data/DATACOFinal_2.csv')
 st.markdown('The initial raw data schema looks like this:')
 st.table(df_init.head(5))
 st.markdown('The data schema for the dashboard looks like this:')
