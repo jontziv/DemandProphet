@@ -4,4 +4,4 @@ altair
 plotly.express
 scikit-learn
 Prophet
-numpy=1.27
+numpy==1.26.4
